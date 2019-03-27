@@ -42,6 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractClass\DocumentReader.cs" />
+    <Compile Include="ConcreteClass\PdfDocument.cs" />
+    <Compile Include="ConcreteClass\RtfDocument.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

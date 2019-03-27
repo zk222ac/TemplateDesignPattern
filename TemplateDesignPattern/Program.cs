@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TemplateDesignPattern.AbstractClass;
+using TemplateDesignPattern.ConcreteClass;
 
 namespace TemplateDesignPattern
 {
@@ -10,12 +12,17 @@ namespace TemplateDesignPattern
     {
         static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            Console.WriteLine("......................................");
 
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+            Console.WriteLine("Document Reader ---  PDF doc");
+            DocumentReader pdfReader = new PdfDocument();
+            pdfReader.OpenDocument();
+
+            Console.WriteLine("Document Reader ---  RTF doc");
+            DocumentReader rtfReader = new RtfDocument();
+            rtfReader.OpenDocument();
+            Console.WriteLine("......................................");
+            
         }
     }
 }
